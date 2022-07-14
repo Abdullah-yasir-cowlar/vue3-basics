@@ -18,6 +18,10 @@ const app = Vue.createApp({
         },
         updateImage(varImg){
             this.image = varImg
+        },
+        removeFromCart(){
+            if (this.cart <=0) return
+            this.cart -=1
         }
     }
 })
